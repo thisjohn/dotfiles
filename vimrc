@@ -18,12 +18,7 @@ set hlsearch
 set ignorecase
 set number
 set background=dark   " The other is light
-
 set laststatus=2   " Always show status line
-"set statusline=%4*%<\ %1*[%F]
-"set statusline+=%4*\ %5*[%{&encoding}, " encoding
-"set statusline+=%{&fileformat}%{\"\".((exists(\"+bomb\")\ &&\ &bomb)?\",BOM\":\"\").\"\"}]%m
-"set statusline+=%4*%=\ %6*%y%4*\ %3*%l%4*,\ %3*%c%4*\ \<\ %2*%P%4*\ \>
 
 set fileencodings=utf-8,big5,gbk,sjis,euc-jp,euc-kr,utf-bom,iso8859-1
 set encoding=utf-8
@@ -43,31 +38,5 @@ set splitright
 nnoremap tl gt
 nnoremap th gT
 
-" color
-hi SpecialKey     term=bold  cterm=bold  ctermfg=4
-hi NonText        term=bold  cterm=bold  ctermfg=4
-hi Directory      term=bold  cterm=bold  ctermfg=6
-hi ErrorMsg       term=standout  cterm=bold  ctermfg=7  ctermbg=1
-hi IncSearch      term=reverse  cterm=reverse
-hi Search         term=reverse  ctermfg=0  ctermbg=3
-hi MoreMsg        term=bold  cterm=bold  ctermfg=2
-hi ModeMsg        term=bold  cterm=bold
-hi LineNr         term=underline  cterm=bold  ctermfg=3
-hi Question       term=standout  cterm=bold  ctermfg=2
-hi StatusLine     term=bold,reverse  cterm=bold,reverse
-hi StatusLineNC   term=reverse  cterm=reverse
-hi Title          term=bold  cterm=bold  ctermfg=5
-hi Visual         term=reverse  cterm=reverse
-hi VisualNOS      term=bold,underline  cterm=bold,underline
-hi WarningMsg     term=standout  cterm=bold  ctermfg=1
-hi WildMenu       term=standout  ctermfg=0  ctermbg=3
-hi Comment        term=bold  cterm=bold  ctermfg=6
-hi Constant       term=underline  cterm=bold  ctermfg=5
-hi Special        term=bold  cterm=bold  ctermfg=1
-hi Identifier     term=underline  cterm=bold  ctermfg=6
-hi Statement      term=bold  cterm=bold  ctermfg=3
-hi PreProc        term=underline cterm=bold  ctermfg=4
-hi Type           term=underline  cterm=bold  ctermfg=2
-hi Ignore         ctermfg=0
-hi Error          term=reverse  cterm=bold  ctermfg=7  ctermbg=1
-hi Todo           term=standout  ctermfg=0  ctermbg=3
+" pathogen (https://github.com/tpope/vim-pathogen)
+"execute pathogen#infect()
