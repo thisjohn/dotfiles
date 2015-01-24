@@ -40,3 +40,6 @@ nnoremap th gT
 
 " pathogen (https://github.com/tpope/vim-pathogen)
 "execute pathogen#infect()
+
+" nerdtree (https://github.com/scrooloose/nerdtree)
+"map <C-n> :NERDTreeToggle<CR>
