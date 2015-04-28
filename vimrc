@@ -1,28 +1,18 @@
-syntax on
+" pathogen (https://github.com/tpope/vim-pathogen)
+execute pathogen#infect()
 
-"set modeline
-"set modelines=2
-"set nobackup
-set nocompatible
-set autoindent
-set smartindent
-set cindent
+" sensible (https://github.com/tpope/vim-sensible)
+
+" nerdtree (https://github.com/scrooloose/nerdtree)
+map <C-n> :NERDTreeToggle<CR>
+
 set tabstop=4
-set softtabstop=4
 set shiftwidth=4
 set expandtab
-"set bs=2   " Allow backspacing over everything in insert mode
-set ruler   " Show the cursor position all the time
-set wrap
 set hlsearch
 set ignorecase
 set number
-set background=dark   " The other is light
-set laststatus=2   " Always show status line
-
-set fileencodings=utf-8,big5,gbk,sjis,euc-jp,euc-kr,utf-bom,iso8859-1
-set encoding=utf-8
-set termencoding=utf-8
+set background=dark " ("dark"|"light")
 
 set splitbelow
 set splitright
@@ -37,9 +27,3 @@ set splitright
 " map
 nnoremap tl gt
 nnoremap th gT
-
-" pathogen (https://github.com/tpope/vim-pathogen)
-"execute pathogen#infect()
-
-" nerdtree (https://github.com/scrooloose/nerdtree)
-"map <C-n> :NERDTreeToggle<CR>
