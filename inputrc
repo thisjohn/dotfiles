@@ -1,0 +1,6 @@
+"\e[5~": history-search-backward  # Page Up (fn + Arrow Up)
+"\e[6~": history-search-forward   # Page Down (fn + Arrow Down)
+
+# this lets you hit tab to auto-complete a file or 
+# directory name ignoring case
+set completion-ignore-case On
