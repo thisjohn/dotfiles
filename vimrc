@@ -1,11 +1,38 @@
-" pathogen (https://github.com/tpope/vim-pathogen)
-execute pathogen#infect()
+" Manage plugins by Vundle
+set nocompatible             " be iMproved, required
+filetype off                 " required
 
+" Set up Vundle
+let vundle_readme=expand('~/.vim/bundle/Vundle.vim/README.md')
+if !filereadable(vundle_readme)
+    echo "Installing Vundle..."
+    echo ""
+    silent !mkdir -p ~/.vim/bundle
+    silent !git clone https://github.com/VundleVim/Vundle.vim ~/.vim/bundle/Vundle.vim
+endif
+
+" Set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" Let Vundle manage Vundle, required
+" Vundle (https://github.com/VundleVim/Vundle.vim)
+Plugin 'VundleVim/Vundle.vim'
+
+" My Plugins, install plugin :PluginInstall
 " sensible (https://github.com/tpope/vim-sensible)
+Plugin 'tpope/vim-sensible'
 
 " nerdtree (https://github.com/scrooloose/nerdtree)
+Plugin 'scrooloose/nerdtree'
 map <C-n> :NERDTreeToggle<CR>
 
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+
+" General settings
 set tabstop=4
 set shiftwidth=4
 set expandtab
