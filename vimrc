@@ -19,7 +19,7 @@ call vundle#begin()
 " Vundle (https://github.com/VundleVim/Vundle.vim)
 Plugin 'VundleVim/Vundle.vim'
 
-" My Plugins, install plugin :PluginInstall
+" My Plugins
 " sensible (https://github.com/tpope/vim-sensible)
 Plugin 'tpope/vim-sensible'
 
@@ -27,9 +27,22 @@ Plugin 'tpope/vim-sensible'
 Plugin 'scrooloose/nerdtree'
 map <C-n> :NERDTreeToggle<CR>
 
+" easymotion (https://github.com/easymotion/vim-easymotion)
+" Usage: <Leader><Leader>w/b
+Plugin 'easymotion/vim-easymotion'
+
+" vim-css-color (https://github.com/ap/vim-css-color)
+Plugin 'ap/vim-css-color'
+
+" vimwiki (https://github.com/vimwiki/vimwiki)
+" Usage: <Leader>ww
+Plugin 'vimwiki/vimwiki'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
+
+" Execute vim and run :PluginInstall
 
 
 " General settings
