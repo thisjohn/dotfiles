@@ -31,6 +31,10 @@ map <C-n> :NERDTreeToggle<CR>
 " Usage: <Leader><Leader>w/b
 Plugin 'easymotion/vim-easymotion'
 
+" vim-fugitive (https://github.com/tpope/vim-fugitive)
+" Git wrapper
+Plugin 'tpope/vim-fugitive'
+
 " tagbar (https://github.com/majutsushi/tagbar)
 " Need ctags
 Plugin 'majutsushi/tagbar'
