@@ -31,8 +31,11 @@ map <C-n> :NERDTreeToggle<CR>
 " Usage: <Leader><Leader>w/b
 Plugin 'easymotion/vim-easymotion'
 
-" vim-css-color (https://github.com/ap/vim-css-color)
-Plugin 'ap/vim-css-color'
+" tagbar (https://github.com/majutsushi/tagbar)
+" Need ctags
+Plugin 'majutsushi/tagbar'
+nmap <F8> :TagbarToggle<CR>
+set tags=./tags;,tags
 
 " snipmate (https://github.com/garbas/vim-snipmate)
 " snippets (https://github.com/honza/vim-snippets)
@@ -40,6 +43,12 @@ Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
+
+" vim-close (https://github.com/Townk/vim-autoclose)
+Plugin 'Townk/vim-autoclose'
+
+" vim-css-color (https://github.com/ap/vim-css-color)
+Plugin 'ap/vim-css-color'
 
 " vimwiki (https://github.com/vimwiki/vimwiki)
 " Usage: <Leader>ww
