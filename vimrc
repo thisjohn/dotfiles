@@ -1,4 +1,4 @@
-" Manage plugins by Vundle
+" Manage plugins by Vundle (https://github.com/VundleVim/Vundle.vim)
 set nocompatible             " be iMproved, required
 filetype off                 " required
 
@@ -16,47 +16,80 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 " Let Vundle manage Vundle, required
-" Vundle (https://github.com/VundleVim/Vundle.vim)
 Plugin 'VundleVim/Vundle.vim'
 
-" My Plugins
-" sensible (https://github.com/tpope/vim-sensible)
+" My plugins
+
+" General
+" vim defaults
 Plugin 'tpope/vim-sensible'
 
-" nerdtree (https://github.com/scrooloose/nerdtree)
+" Navigation
+" tree explorer
 Plugin 'scrooloose/nerdtree'
 map <C-n> :NERDTreeToggle<CR>
 
-" easymotion (https://github.com/easymotion/vim-easymotion)
-" Usage: <Leader><Leader>w/b
+Plugin 'Xuyuanp/nerdtree-git-plugin'
+let g:NERDTreeIndicatorMapCustom = {
+  \ "Modified"  : "*",
+  \ "Staged"    : "+",
+  \ "Untracked" : "?",
+  \ "Renamed"   : ">",
+  \ "Unmerged"  : "=",
+  \ "Deleted"   : "x",
+  \ "Dirty"     : "X",
+  \ "Clean"     : "V",
+  \ "Unknown"   : "N"
+  \ }
+
+" fuzzy file finder
+Plugin 'ctrlpvim/ctrlp.vim'
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+set wildignore+=*/node_modules/*
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+  \ 'file': '\v\.(exe|so|dll)$'
+  \ }
+" Usage: <c-p>, then
+"   <c-d> to switch to filename only search instead of full path
+"   <c-j>, <c-k> or the arrow keys to navigate the result list
+"   <c-y> to create a new file and its parent directories
+
 Plugin 'easymotion/vim-easymotion'
+" Usage: <Leader><Leader>w/b
 
-" vim-fugitive (https://github.com/tpope/vim-fugitive)
-" Git wrapper
-Plugin 'tpope/vim-fugitive'
-
-" tagbar (https://github.com/majutsushi/tagbar)
-" Need ctags
+" ctags
 Plugin 'majutsushi/tagbar'
 nmap <F8> :TagbarToggle<CR>
-set tags=./tags;,tags
 
-" snipmate (https://github.com/garbas/vim-snipmate)
-" snippets (https://github.com/honza/vim-snippets)
+" Editing
+
+" editor config
+Plugin 'editorconfig/editorconfig-vim'
+
+" snippets
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
 
-" vim-close (https://github.com/Townk/vim-autoclose)
-Plugin 'Townk/vim-autoclose'
+" insert or delete brackets, parens, quotes in pair
+Plugin 'jiangmiao/auto-pairs'
 
-" vim-css-color (https://github.com/ap/vim-css-color)
+" comment
+Plugin 'scrooloose/nerdcommenter'
+" Usage: <Leader>cc/u
+
+" preview colours in source code while editing
 Plugin 'ap/vim-css-color'
 
-" vimwiki (https://github.com/vimwiki/vimwiki)
-" Usage: <Leader>ww
+" Utility
+" git wrapper
+Plugin 'tpope/vim-fugitive'
+
+" note
 Plugin 'vimwiki/vimwiki'
+" Usage: <Leader>ww
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
