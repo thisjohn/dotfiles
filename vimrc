@@ -27,7 +27,7 @@ Plugin 'tpope/vim-sensible'
 " Navigation
 " tree explorer
 Plugin 'scrooloose/nerdtree'
-map <C-n> :NERDTreeToggle<CR>
+nmap <F7> :NERDTreeToggle<CR>
 
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 let g:NERDTreeIndicatorMapCustom = {
@@ -37,7 +37,7 @@ let g:NERDTreeIndicatorMapCustom = {
   \ "Renamed"   : ">",
   \ "Unmerged"  : "=",
   \ "Deleted"   : "x",
-  \ "Dirty"     : "X",
+  \ "Dirty"     : "*",
   \ "Clean"     : "V",
   \ "Unknown"   : "N"
   \ }
@@ -76,9 +76,37 @@ Plugin 'honza/vim-snippets'
 " insert or delete brackets, parens, quotes in pair
 Plugin 'jiangmiao/auto-pairs'
 
+" quoting/parenthesizing
+Plugin 'tpope/vim-surround'
+" Usage:
+"   ds[mark] delete
+"   cs[mark-old][mark-new] change
+"   ysiw[mark] add (inside word)
+"   yss[mark] add (sentence)
+
 " comment
 Plugin 'scrooloose/nerdcommenter'
 " Usage: <Leader>cc/u
+
+" displaying indent levels
+Plugin 'nathanaelkane/vim-indent-guides'
+" Usage: <Leader>ig
+
+" improve HTML & CSS workflow
+Plugin 'mattn/emmet-vim'
+" Usage: https://raw.githubusercontent.com/mattn/emmet-vim/master/TUTORIAL
+"   <c-y>, expand an abbreviation
+"   <c-y>n go to the next edit point
+"   <c-y>N go to the previous edit point
+"   <c-y>d balance a tag inward
+"   <c-y>D balance a tag outward
+"   <c-y>k remove a tag
+
+" improve Javascript indentation and syntax
+Plugin 'jelera/vim-javascript-syntax'
+
+" add CSS3 syntax support to vim's built-in `syntax/css.vim`
+Plugin 'hail2u/vim-css3-syntax'
 
 " preview colours in source code while editing
 Plugin 'ap/vim-css-color'
