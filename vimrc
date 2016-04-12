@@ -67,11 +67,16 @@ nmap <F8> :TagbarToggle<CR>
 " editor config
 Plugin 'editorconfig/editorconfig-vim'
 
+" code completions
+Plugin 'ervandew/supertab'
+
 " snippets
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
+imap <c-j> <Plug>snipMateNextOrTrigger
+smap <c-j> <Plug>snipMateNextOrTrigger
 
 " insert or delete brackets, parens, quotes in pair
 Plugin 'jiangmiao/auto-pairs'
