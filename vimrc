@@ -24,6 +24,9 @@ Plugin 'VundleVim/Vundle.vim'
 " vim defaults
 Plugin 'tpope/vim-sensible'
 
+" Theme
+Plugin 'gosukiwi/vim-atom-dark'
+
 " Navigation
 " tree explorer
 Plugin 'scrooloose/nerdtree'
@@ -150,7 +153,6 @@ set expandtab
 set hlsearch
 set ignorecase
 set number
-set background=dark " ("dark"|"light")
 
 set splitbelow
 set splitright
@@ -161,6 +163,9 @@ set splitright
 "set foldlevel=0 " Default is diabled
 "let php_folding = 1 " Important
 "set foldnestmax=3
+
+" theme
+colorscheme atom-dark-256  " need vim-atom-dark
 
 " map
 nnoremap tl gt
