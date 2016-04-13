@@ -117,6 +117,9 @@ let g:jsx_ext_required = 0
 
 Plugin 'gavocanov/vim-js-indent'
 
+" jsdoc
+Plugin 'heavenshell/vim-jsdoc'
+
 " add css3 syntax support to vim's built-in `syntax/css.vim`
 Plugin 'hail2u/vim-css3-syntax'
 
