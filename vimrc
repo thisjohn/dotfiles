@@ -153,6 +153,7 @@ set expandtab
 set hlsearch
 set ignorecase
 set number
+set clipboard=unnamed    " access the system clipboard
 
 set splitbelow
 set splitright
@@ -160,12 +161,12 @@ set splitright
 " folder
 "set foldmarker={{{,}}}
 "set foldmethod=marker
-"set foldlevel=0 " Default is diabled
-"let php_folding = 1 " Important
+"set foldlevel=0        " Default is diabled
+"let php_folding = 1    " Important
 "set foldnestmax=3
 
 " theme
-colorscheme atom-dark-256  " need vim-atom-dark
+colorscheme atom-dark-256    " need vim-atom-dark
 
 " map
 nnoremap tl gt
