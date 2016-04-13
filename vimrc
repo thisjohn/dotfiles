@@ -153,7 +153,6 @@ set expandtab
 set hlsearch
 set ignorecase
 set number
-set clipboard=unnamed    " access the system clipboard
 
 set splitbelow
 set splitright
@@ -171,3 +170,7 @@ colorscheme atom-dark-256    " need vim-atom-dark
 " map
 nnoremap tl gt
 nnoremap th gT
+
+" access the system clipboard
+nnoremap sy "*y
+vnoremap sy "*y
