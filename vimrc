@@ -107,10 +107,17 @@ Plugin 'mattn/emmet-vim'
 "   <c-y>D balance a tag outward
 "   <c-y>k remove a tag
 
-" improve Javascript indentation and syntax
-Plugin 'jelera/vim-javascript-syntax'
+" html5 syntax
+Plugin 'othree/html5.vim'
 
-" add CSS3 syntax support to vim's built-in `syntax/css.vim`
+" js/jsx syntax and intentation
+Plugin 'othree/yajs.vim'
+Plugin 'mxw/vim-jsx'
+let g:jsx_ext_required = 0
+
+Plugin 'gavocanov/vim-js-indent'
+
+" add css3 syntax support to vim's built-in `syntax/css.vim`
 Plugin 'hail2u/vim-css3-syntax'
 
 " preview colours in source code while editing
