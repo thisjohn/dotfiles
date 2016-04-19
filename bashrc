@@ -7,7 +7,7 @@
 if [ -x "$(command -v vcprompt)" ]; then
     # vcprompt found
     #export PS1="\u@\h:\w \$(vcprompt -f '[%b%m%u%a] ')\$ "  # white
-    export PS1="\u@\h:\w \e[0;32m\$(vcprompt -f '[%b%m%u%a] ')\e[m\$ "
+    export PS1="\u@\h:\w \[\e[0;32m\]\$(vcprompt -f '[%b%m%u%a] ')\[\e[m\]\$ "
 fi
 
 export VISUAL=vim
