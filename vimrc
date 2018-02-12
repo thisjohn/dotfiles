@@ -44,6 +44,8 @@ let g:NERDTreeIndicatorMapCustom = {
   \ "Clean"     : "V",
   \ "Unknown"   : "N"
   \ }
+let g:NERDTreeShowHidden=1
+let g:NERDTreeIgnore=['\.pyc$', '\.swp$']
 
 " fuzzy file finder
 Plugin 'ctrlpvim/ctrlp.vim'
