@@ -120,6 +120,9 @@ let g:jsx_ext_required = 0
 
 Plugin 'gavocanov/vim-js-indent'
 
+" typescript
+Plugin 'leafgarland/typescript-vim'
+
 " jsdoc
 Plugin 'heavenshell/vim-jsdoc'
 let g:jsdoc_enable_es6 = 1
@@ -163,6 +166,9 @@ set splitright
 "set foldlevel=0        " Default is diabled
 "let php_folding = 1    " Important
 "set foldnestmax=3
+
+" Podfile
+au BufRead,BufNewFile Podfile set filetype=ruby
 
 " theme
 colorscheme atom-dark-256    " need vim-atom-dark
