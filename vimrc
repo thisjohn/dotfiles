@@ -60,6 +60,9 @@ let g:ctrlp_custom_ignore = {
 "   <c-j>, <c-k> or the arrow keys to navigate the result list
 "   <c-y> to create a new file and its parent directories
 
+" Refresh both NERDTree and CtrlP
+nmap <Leader>r :NERDTreeFocus<cr>R<c-w><c-p>:CtrlPClearCache<cr>
+
 Plugin 'easymotion/vim-easymotion'
 " Usage: <Leader><Leader>w/b
 
